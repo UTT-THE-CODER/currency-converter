@@ -1,0 +1,99 @@
+:root{
+  --bg-1: #0f172a;
+  --bg-2: #07102a;
+  --card-bg: rgba(255,255,255,0.04);
+  --glass-border: rgba(255,255,255,0.08);
+  --accent: #5eead4;
+  --accent-2: #60a5fa;
+  --muted: rgba(255,255,255,0.7);
+}
+
+/* Root background and subtle blobs */
+.app-root{
+  background: radial-gradient( circle at 10% 10%, rgba(96,165,250,0.06), transparent 8%),
+              radial-gradient( circle at 90% 80%, rgba(94,234,212,0.04), transparent 10%),
+              linear-gradient(180deg, var(--bg-1), var(--bg-2));
+  min-height:100vh;
+  padding:3rem 0;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color: var(--muted);
+}
+
+.glass-card{
+  background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
+  border: 1px solid var(--glass-border);
+  border-radius: 14px;
+  box-shadow: 0 6px 30px rgba(2,6,23,0.6), inset 0 1px 0 rgba(255,255,255,0.02);
+  backdrop-filter: blur(8px) saturate(120%);
+  transition: transform 220ms ease, box-shadow 220ms ease;
+}
+.glass-card:hover{ transform: translateY(-4px); box-shadow: 0 12px 50px rgba(2,6,23,0.7); }
+
+/* InputBox styles */
+.input-box{ background: transparent; padding: 6px; }
+.input-box .amount-input{
+  padding: 8px 6px;
+  border-radius: 10px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border: 1px solid rgba(255,255,255,0.04);
+  color: #fff;
+}
+.input-box .amount-input::placeholder{ color: rgba(255,255,255,0.35); }
+.input-box .amount-input:focus{ box-shadow: 0 6px 18px rgba(99,102,241,0.08), 0 0 0 4px rgba(96,165,250,0.07); border-color: rgba(96,165,250,0.6); }
+
+.currency-select{ color: #e6eef8; }
+.select-arrow{ position:absolute; right:10px; top:50%; transform: translateY(-50%); pointer-events:none; color: rgba(255,255,255,0.55); }
+
+/* Make dropdown options more visible when opened */
+.currency-select{
+  background: rgba(255,255,255,0.04);
+  color: #e6eef8;
+  padding-right: 30px;
+}
+.currency-select:focus{ box-shadow: 0 8px 30px rgba(2,6,23,0.55), 0 0 0 6px rgba(96,165,250,0.06); }
+.currency-select option{
+  background: #0b1220;
+  color: #f8fafc;
+  padding: 6px 8px;
+  font-weight:600;
+}
+
+/* Swap button */
+.swap-btn{
+  display:inline-grid; place-items:center; width:46px; height:46px; border-radius:50%;
+  background: linear-gradient(135deg,var(--accent-2),var(--accent)); color:#04263b; font-weight:700;
+  border: 1px solid rgba(255,255,255,0.12); box-shadow: 0 6px 18px rgba(96,165,250,0.12);
+  transition: transform 260ms cubic-bezier(.2,.9,.3,1), box-shadow 160ms;
+}
+.swap-btn:hover{ transform: translateY(-3px) rotate(-8deg); box-shadow: 0 14px 30px rgba(96,165,250,0.18); }
+.swap-btn.swapping{ animation: swap-rotate 420ms ease; }
+@keyframes swap-rotate{ 0%{ transform: rotate(0) scale(1); } 50%{ transform: rotate(180deg) scale(1.05);} 100%{ transform: rotate(360deg) scale(1);} }
+
+/* Convert button */
+.convert-btn{
+  padding: 12px 16px; border-radius: 12px; font-weight:600; color: #05293b;
+  background: linear-gradient(90deg, #60a5fa 0%, #5eead4 100%);
+  box-shadow: 0 10px 30px rgba(96,165,250,0.15);
+  transition: transform 200ms ease, box-shadow 200ms ease, opacity 200ms;
+}
+.convert-btn:hover{ transform: translateY(-4px); box-shadow: 0 20px 50px rgba(96,165,250,0.22); }
+
+/* Responsive tweaks */
+@media (max-width:640px){
+  .glass-card{ padding: 16px }
+  .input-box{ gap:10px }
+  .input-box .w-36{ width: 110px }
+}
+
+/* small utility polish */
+label, p{ color: rgba(255,255,255,0.75); }
+
+/* Make default option text uppercase consistent */
+select option{ text-transform: uppercase; }
+
+/* Header styles */
+.card-header{ padding-bottom: 6px; }
+.app-title{ margin:0; font-size:1.5rem; color: #f8fafc; letter-spacing: -0.02em; font-weight:700; }
+.app-subtitle{ margin:0; margin-top:6px; font-size:0.85rem; color: rgba(255,255,255,0.65); }
+
+.rate-text{ color: rgba(255,255,255,0.9); font-weight:600; font-size:0.95rem; }
