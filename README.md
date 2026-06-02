@@ -94,7 +94,7 @@ This project was built to practice and improve:
 Add your project screenshot here.
 
 
-![Currency Converter Preview](./assets/preview.png)
+![Currency Converter Preview](.src/assets/preview.png)
 
 
 
