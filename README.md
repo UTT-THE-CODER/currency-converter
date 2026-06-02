@@ -93,21 +93,21 @@ This project was built to practice and improve:
 
 Add your project screenshot here.
 
-```md
-![Currency Converter Preview](./assets/preview.png)
-```
 
----
+![Currency Converter Preview](./assets/preview.png)
+
+
+
 
 ## 🔗 Live Demo
 
 Add your deployed project link here.
 
-```md
-(https://agent-6a1e7339f716fb28b5--currency-converter-utt.netlify.app/)
-```
 
----
+(https://agent-6a1e7339f716fb28b5--currency-converter-utt.netlify.app/)
+
+
+
 
 ## 🧑‍💻 Author
 
