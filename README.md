@@ -1,16 +1,123 @@
-# React + Vite
+# 💱 Currency Converter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive currency converter web app built using React.
+This project fetches real-time exchange rates from an external API and allows users to instantly convert currencies with a clean and interactive UI.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+* Real-time currency conversion
+* Supports multiple international currencies
+* Currency swap functionality
+* Responsive design for mobile and desktop
+* Modern glassmorphism-inspired UI
+* Live exchange rate display
+* Built using reusable React components
+* Custom React hooks for API handling
+* Smooth animations and hover effects
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* React
+* JavaScript (ES6+)
+* CSS3
+* Vite
+* Currency Exchange API
+
+---
+
+## 📌 How It Works
+
+1. User enters an amount
+2. Selects source and target currencies
+3. App fetches live exchange rates from API
+4. Converted amount is displayed instantly
+5. User can swap currencies dynamically
+
+---
+
+## 📱 Responsive Design
+
+* Mobile-friendly layout
+* Tablet and desktop support
+* Flexible and adaptive UI components
+
+---
+
+## 🎯 Purpose of This Project
+
+This project was built to practice and improve:
+
+* React fundamentals
+* Component-based architecture
+* Custom hooks
+* API integration
+* State management
+* Responsive UI design
+* Modern frontend styling
+
+---
+
+## 📂 Project Structure
+
+```bash
+📦 currency-converter
+ ┣ 📂 src
+ ┃ ┣ 📂 components
+ ┃ ┣ 📂 hooks
+ ┃ ┣ 📜 App.jsx
+ ┃ ┣ 📜 main.jsx
+ ┃ ┗ 📜 index.css
+ ┣ 📜 package.json
+ ┣ 📜 vite.config.js
+ ┗ 📜 README.md
+```
+
+---
+
+## 🌟 Future Improvements
+
+* Add currency charts and trends
+* Add dark/light theme toggle
+* Add favorite currencies
+* Add conversion history
+* Improve accessibility
+* Add loading animations
+
+---
+
+## 📸 Preview
+
+Add your project screenshot here.
+
+```md
+![Currency Converter Preview](./assets/preview.png)
+```
+
+---
+
+## 🔗 Live Demo
+
+Add your deployed project link here.
+
+```md
+(https://agent-6a1e7339f716fb28b5--currency-converter-utt.netlify.app/)
+```
+
+---
+
+## 🧑‍💻 Author
+
+Uttkarsh
+Aspiring Full-Stack Developer 🚀
+
+---
+
+## 🙌 Acknowledgements
+
+* Exchange Rate API
+* React Documentation
+* Vite
